@@ -59,7 +59,7 @@ async def main():
     """
     啟動 WebSocket 伺服器
     """
-    server = await websockets.serve(handle_client, "0.0.0.0", 7600)
+    server = await websockets.serve(handle_client, "0.0.0.0", 7800)
     print("WebSocket server started on ws://0.0.0.0:7600")
     await server.wait_closed()
 
